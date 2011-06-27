@@ -1,0 +1,35 @@
+!!! html
+//if lt IE 7
+  html(class='no-js ie6 oldie', lang='en')
+//if IE 7
+  html(class='no-js ie7 oldie', lang='en')
+//if IE 8
+  html(class='no-js ie8 oldie', lang='en') 
+//[if gt IE 8]>
+  <!
+html(class='no-js', lang='en')
+  //
+    <![end if]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    //-title=title
+    //-meta(name="description", content=description)
+    //-meta(name="author", content=author)
+    meta(name="viewport", content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='stylesheets/style.css')
+    //-script(src='javascripts/libs/modernizr-2.0.min.js')
+    //-script(src='javascripts/libs/respond.min.js')
+  body!=body
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js')
+    script
+      window.jQuery || document.write('<script src="javascripts/libs/jquery-1.6.1.min.js"><\/script>')
+    //-script(src='javascripts/plugins.js')
+    //-script(src='javascripts/script.js')
+    //- change UA-XXXXX-X to your id and outdent the following:
+    //-
+      script
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
