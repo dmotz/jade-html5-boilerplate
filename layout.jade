@@ -21,8 +21,8 @@ html.no-js(lang='en')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js')
     script
       window.jQuery || document.write('<script src="javascripts/libs/jquery-1.6.1.min.js"><\\/script>')
-    //-script(src='javascripts/plugins.js')
-    //-script(src='javascripts/script.js')
+    //-script(defer, src='javascripts/plugins.js')
+    //-script(defer, src='javascripts/script.js')
     //- change UA-XXXXX-X to your id and outdent the following:
     //-
       script
@@ -31,6 +31,6 @@ html.no-js(lang='en')
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     //if lt IE 7
-      script(src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js')
-      script
+      script(defer, src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js')
+      script(defer)
         window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})
