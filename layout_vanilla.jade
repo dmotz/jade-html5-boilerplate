@@ -18,6 +18,16 @@ html.no-js
     link(rel='stylesheet', href='css/main.css')
     //-script(src='js/vendor/modernizr-2.6.2.min.js')
   body
+    //if lt IE 7
+      p.chromeframe
+        | You are using an 
+        strong outdated
+        | browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  or 
+        a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
+        |  to improve your experience.
+
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js')
     script
       window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\\/script>')
