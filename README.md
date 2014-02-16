@@ -15,6 +15,6 @@ Run `./build` to output the templates as HTML files.
 
 Run `./test` to test the template renderings against references.
 
-Tested with Jade 0.34.1.
+Tested with Jade `1.1.5`.
 
 
