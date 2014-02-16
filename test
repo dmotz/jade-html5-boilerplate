@@ -5,4 +5,5 @@ if [[ ( "$(cat layout.jade | jade -P)" = "$(cat output/layout.html)" ) &&
     echo -e "\033[32m\n  PASSED!\033[0m\n  The Jade output matches the reference HTML.\n"
 else
     echo -e "\033[31m\n  FAILED!\033[0m\n  The Jade output doesn't match the reference HTML.\n"
+  exit 1
 fi
